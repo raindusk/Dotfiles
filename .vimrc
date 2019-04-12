@@ -1,5 +1,8 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Nocompatible mode with Vi
+set nocompatible
+
+" Detect file type
+filetype on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -32,8 +35,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+" Detect dedicated plugins and indents for each file type.
 filetype plugin indent on    " required
 
 
@@ -47,8 +49,12 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 """""""""""""""""""""""""""""""
+
+" Syntax theme
 syntax enable
 colorscheme Brezza/brezza
+
+" Update file when changed from outside of Vim.
 set autoread
 
 " Tabs & Spaces
@@ -63,14 +69,14 @@ set backspace=indent,eol,start
 set number
 set showcmd
 set cursorline
-" set laststatus=2
+set laststatus=2
 set fillchars+=vert:\ 
 set wildmenu
 set showmatch
 set virtualedit=onemore
 noremap j gj
 noremap k gk
-set statusline=%m%r%h%w\%=[Type=%Y\,\ Format=%{&ff}\,\ Enc=%{&fileencoding}\,\ %P\,\ L%L]
+" set statusline=%m%r%h%w\%=[Type=%Y\,\ Format=%{&ff}\,\ Enc=%{&fileencoding}\,\ %P\,\ L%L]
 set clipboard+=unnamed
 
 " Files
