@@ -14,18 +14,19 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
+" Complement to command line git.
 Plugin 'tpope/vim-fugitive'
 
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Vim-script library,
+"   which provides some utility functions and commands.
+Plugin 'L9'
+
+" Jumping to tags.
+Plugin 'wincent/command-t'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
+" HTML utility.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Install L9 and avoid a Naming conflict if you've already installed a
