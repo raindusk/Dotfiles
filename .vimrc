@@ -17,6 +17,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Complement to command line git.
 Plugin 'tpope/vim-fugitive'
 
+" Helper to end certain structures automatically.
+Plugin 'tpope/vim-endwise'
+
 " Vim-script library,
 "   which provides some utility functions and commands.
 Plugin 'L9'
