@@ -135,23 +135,6 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
 # Aliases
-
-alias la='ls -a'
-alias ll='ls -l'
-
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias mkdir='mkdir -p'
-
-## You can also use aliases, when using 'sudo' command
-alias sudo='sudo '
-
-# Global aliases
-alias -g L='| less'
-alias -g G='| grep'
-
 ## Copy standard output to clipboard with C
 ## mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 if which pbcopy >/dev/null 2>&1 ; then
@@ -164,8 +147,6 @@ elif which putclip >/dev/null 2>&1 ; then
     ## Cygwin
     alias -g C='| putclip'
 fi
-
-
 
 ########################################
 # Setting for each OS
