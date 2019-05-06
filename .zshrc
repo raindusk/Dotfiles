@@ -32,7 +32,6 @@ SAVEHIST=1000000
 PROMPT="%F{086}%n%f %(5~,%-1~/.../%2~,%~)
 %F{205}%B$%b%f "
 
-
 # Specifing word delimiter
 ## -U Prevent overwriting functions defined by user
 ## -z Loading in zsh format
@@ -161,6 +160,15 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
+
+# For Apple Terminal.app if you're a macOS user
+## Open new tab with same directory
+if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
+  function chpwd {
+    printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
+  }
+  chpwd
+fi
 
 ## Vim modeline
 # vim :set fenc=UTF-8 ff=unix,mac,dos ft=zsh:
