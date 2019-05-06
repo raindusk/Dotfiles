@@ -14,6 +14,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Asynchronous Lint Engine
+Plugin 'w0rp/ale'
+
 " Complement to command line git.
 Plugin 'tpope/vim-fugitive'
 
