@@ -59,6 +59,7 @@ filetype plugin indent on    " required
 
 " Syntax theme
 syntax enable
+set background=dark
 colorscheme Brezza/brezza
 
 " Update file when changed from outside of Vim.
@@ -74,6 +75,7 @@ set backspace=indent,eol,start
 
 " UI
 set number
+set signcolumn=yes
 set showcmd
 set cursorline
 set laststatus=2
@@ -85,6 +87,8 @@ noremap j gj
 noremap k gk
 " set statusline=%m%r%h%w\%=[Type=%Y\,\ Format=%{&ff}\,\ Enc=%{&fileencoding}\,\ %P\,\ L%L]
 set clipboard+=unnamed
+set mouse=a
+set noerrorbells
 
 " Files
 set encoding=utf-8
