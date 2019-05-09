@@ -60,7 +60,7 @@ filetype plugin indent on    " required
 " Syntax theme
 syntax enable
 set background=dark
-colorscheme Brezza/brezza
+colorscheme brezza
 
 " Update file when changed from outside of Vim.
 set autoread
