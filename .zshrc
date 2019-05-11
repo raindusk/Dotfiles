@@ -171,5 +171,10 @@ if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   chpwd
 fi
 
+## heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
 ## Vim modeline
 # vim :set fenc=UTF-8 ff=unix,mac,dos ft=zsh:
+
+
