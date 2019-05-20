@@ -20,7 +20,4 @@ GIT_PS1_SHOWUPSTREAM=auto
 # 1m              Bold text
 # 0m              No style
 
-PS1="\[\e[38;5;086;1m\]\u \[\e[38;5;195;1m\]\h \[\e[0m\]\w\n\[\e[38;5;205;1m\]\$\[\e[0m\] "
-
-# For inserting one blank line above the prompt
-PROMPT_COMMAND="echo"
+PS1="\n\[\e[38;5;086;1m\]\u \[\e[38;5;195;1m\]\h \[\e[0m\]\w\n\[\e[38;5;205;1m\]\$\[\e[0m\] "
