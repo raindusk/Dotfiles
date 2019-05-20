@@ -1,4 +1,6 @@
 source ~/.bashrc
+shopt -s autocd
+shopt -s cdspell
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 eval "$(rbenv init -)"
 
