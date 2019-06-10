@@ -48,7 +48,8 @@ zstyle ':zle:*' word-style unspecified
 ## -U Prevent overwriting functions defined by user
 ## -z Loading in zsh format
 autoload -Uz compinit
-compinit
+## Skip security check when -c option is set
+compinit -c
 
 ## Don't distinguish between lower and upper case
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -124,7 +125,8 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 
 ## Use sophisticated glob
-setopt extended_glob
+## Note: This option interferes with some feature of Git.
+# setopt extended_glob
 
 ########################################
 # Key binding
@@ -176,5 +178,4 @@ HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test 
 
 ## Vim modeline
 # vim :set fenc=UTF-8 ff=unix,mac,dos ft=zsh:
-
 
