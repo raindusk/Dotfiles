@@ -72,6 +72,7 @@ set softtabstop=2
 set expandtab
 set smartindent
 set backspace=indent,eol,start
+" set textwidth=80
 
 " UI
 set number
