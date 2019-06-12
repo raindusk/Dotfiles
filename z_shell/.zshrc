@@ -29,8 +29,8 @@ SAVEHIST=1000000
 
 # Prompt
 ## Display in 2 lines
-PROMPT="%F{086}%n%f %(5~,%-1~/.../%2~,%~)
-%F{205}%B$%b%f "
+PROMPT="%F{073}%n%f %(5~,%-1~/.../%2~,%~)
+%F{175}%B$%b%f "
 
 # Specifing word delimiter
 ## -U Prevent overwriting functions defined by user
