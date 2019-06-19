@@ -77,8 +77,8 @@ autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 
 ## Style the looks
-zstyle ':vcs_info:*' formats '%F{086}[%s]-<%b>%f'
-zstyle ':vcs_info:*' actionformats '%F{205}[%s]-<%b|%a>%f'
+zstyle ':vcs_info:*' formats '%F{073}[%s]-<%b>%f'
+zstyle ':vcs_info:*' actionformats '%F{175}[%s]-<%b|%a>%f'
 
 function _update_vcs_info_msg() {
     LANG=en_US.UTF-8 vcs_info
