@@ -1,0 +1,38 @@
+[user]
+	name = tsubasa.kat
+	email = tsubasa.kat@outlook.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+  uncommit = reset HEAD~
+  unstage = reset HEAD
+[color]
+  ui = auto
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = magenta
+[color "branch"]
+  current = green
+  local = cyan
+  remote = yellow
+[color "diff"]
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+[core]
+	editor = vim
+	autocrlf = input
+	safecrlf = true
+	ignorecase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[merge]
+	ff = false
+[pull]
+	ff = only
