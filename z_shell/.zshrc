@@ -43,13 +43,6 @@ zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
 ########################################
-# Completion
-## Enable complementaly function
-## -U Prevent overwriting functions defined by user
-## -z Loading in zsh format
-autoload -Uz compinit
-## Skip security check when -c option is set
-compinit -c
 
 ## Don't distinguish between lower and upper case
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

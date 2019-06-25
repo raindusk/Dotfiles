@@ -22,3 +22,11 @@ alias sudo='sudo '
 alias -g L='| less'
 alias -g G='| grep'
 
+# Completion
+## Enable complementaly function
+## -U Prevent overwriting functions defined by user
+## -z Loading in zsh format
+autoload -Uz compinit
+## Skip security check when -c option is set
+compinit -c
+
