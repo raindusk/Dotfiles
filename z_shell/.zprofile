@@ -5,6 +5,10 @@ eval "$(rbenv init -)"
 alias bx="bundle exec"
 alias brc="bundle exec rails console"
 alias brs="bundle exec rails server"
+alias brg="bundle exec rails generate"
+
+alias pip="pip3"
+alias python="python3"
 
 alias la='ls -a'
 alias ll='ls -l'
