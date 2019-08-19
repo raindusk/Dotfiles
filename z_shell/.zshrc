@@ -149,10 +149,14 @@ case ${OSTYPE} in
         ## For macOS
         export CLICOLOR=1
         export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+        # Set GPG tty
+        export GPG_TTY=$(tty)
         alias ls='ls -G -F'
         ;;
     linux*)
         ## For Linux
+        # Set GPG tty
+        export GPG_TTY=$(tty)
         alias ls='ls -F --color=auto'
         ;;
 esac
