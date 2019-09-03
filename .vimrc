@@ -17,6 +17,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
+" Syntax highlighting Slim
+Plugin 'slim-template/vim-slim.git'
+
 " Complement to command line git.
 Plugin 'tpope/vim-fugitive'
 
@@ -94,3 +97,6 @@ set noerrorbells
 " Files
 set encoding=utf-8
 set fileformats=unix,mac,dos
+
+" Syntax highlight
+autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
