@@ -35,7 +35,7 @@ alias -g G='| grep'
 ## Enable complementaly function
 ## -U Prevent overwriting functions defined by user
 ## -z Loading in zsh format
-autoload -Uz compinit
+#autoload -Uz compinit
 ## Skip security check when -c option is set
-compinit -c
+#compinit -c
 
