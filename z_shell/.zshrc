@@ -179,3 +179,7 @@ HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test 
 ## Vim modeline
 # vim :set fenc=UTF-8 ff=unix,mac,dos ft=zsh:
 
+export PATH=$HOME/.mix/escripts:$PATH
+export PATH="/usr/local/sbin:$PATH"
+export PGDATA='/usr/local/var/postgres'
+eval "$(rbenv init -)"
