@@ -62,8 +62,10 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
 ## Complete Git commands
 ## The script from '~/.zsh/_git'
-fpath=(~/.zsh $fpath)
+#fpath=(~/.zsh $fpath)
 
+## For Git installed with Homebrew
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
 ########################################
 # VCS information such as Git
