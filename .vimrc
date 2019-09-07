@@ -94,6 +94,9 @@ set clipboard+=unnamed
 set mouse=a
 set noerrorbells
 
+"
+set timeoutlen=1000 ttimeoutlen=0
+
 " Files
 set encoding=utf-8
 set fileformats=unix,mac,dos

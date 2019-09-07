@@ -27,6 +27,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+# Time to wait for aditional keys in sequences
+KEYTIMEOUT=1
+
 # Prompt
 ## Display in 2 lines
 PROMPT="%F{073}%n%f %(5~,%-1~/.../%2~,%~)
