@@ -32,7 +32,7 @@ KEYTIMEOUT=1
 
 # Prompt
 ## Display in 2 lines
-PROMPT="%F{073}%n%f %(5~,%-1~/.../%2~,%~)
+PROMPT="%K{241}%F{080} %n %f%k%K{236} %(5~,%-1~/.../%2~,%~) %k
 %F{175}%B$%b%f "
 
 # Specifing word delimiter
