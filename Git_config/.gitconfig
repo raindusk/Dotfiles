@@ -1,0 +1,45 @@
+[user]
+	name = tsubasa.kat
+	email = tsubasa.kat@outlook.com
+	signingKey = 2B5000C4865D19BB
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+  uncommit = reset HEAD~
+  unstage = reset HEAD
+[color]
+  ui = auto
+[color "status"]
+  added = 079
+  changed = 184
+  untracked = 212
+[color "branch"]
+  current = 079
+  local = 254
+  remote = 184
+[color "diff"]
+  meta = 184
+  frag = 171
+  old = 212
+  new = 079
+[core]
+	editor = vim
+	autocrlf = input
+	safecrlf = true
+	ignorecase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[merge]
+	ff = false
+[pull]
+	ff = only
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg
+[diff]
+	tool = vimdiff
