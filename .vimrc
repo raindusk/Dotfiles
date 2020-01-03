@@ -80,6 +80,9 @@ filetype plugin indent on    " required
 
 """""""""""""""""""""""""""""""
 
+" Nocompatible mode with Vi
+set nocompatible
+
 " Syntax theme
 syntax enable
 set background=dark
