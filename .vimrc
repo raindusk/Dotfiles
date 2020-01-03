@@ -14,17 +14,38 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" File system explorer
+Plugin 'scrooloose/nerdtree'
+
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
 " Syntax highlighting Slim
 Plugin 'slim-template/vim-slim.git'
 
+" Syntax highlighting Elm
+Plugin 'elmcast/elm-vim'
+
+" Prettier wrapper (formatter)
+Plugin 'prettier/vim-prettier'
+
+" Emmet for Vim
+Plugin 'mattn/emmet-vim'
+
 " Complement to command line git.
 Plugin 'tpope/vim-fugitive'
 
 " Helper to end certain structures automatically.
 Plugin 'tpope/vim-endwise'
+
+" Helper to quote
+Plugin 'jiangmiao/auto-pairs'
+
+" JavaScript syntax
+Plugin 'othree/yajs.vim'
+
+" JSX syntax
+Plugin 'maxmellon/vim-jsx-pretty'
 
 " Vim-script library,
 "   which provides some utility functions and commands.
