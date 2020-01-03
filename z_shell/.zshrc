@@ -60,6 +60,9 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
 ## Complete process name of 'ps' command
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
+## For zsh command completion
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 ## Complete Git commands
 ## The script from '~/.zsh/_git'
 #fpath=(~/.zsh $fpath)
