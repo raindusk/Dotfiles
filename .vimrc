@@ -1,10 +1,8 @@
-" Nocompatible mode with Vi
-set nocompatible
-
-" Detect file type
-filetype on
-
-" set the runtime path to include Vundle and initialize
+"""""""""""
+" Vundle
+"""""""""""
+"
+"" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
 " alternatively, pass a path where Vundle should install plugins
@@ -65,6 +63,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
 
 " Detect dedicated plugins and indents for each file type.
 filetype plugin indent on    " required
