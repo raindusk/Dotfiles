@@ -1,3 +1,52 @@
+" Nocompatible mode with Vi
+set nocompatible
+
+" Syntax theme
+syntax enable
+set background=dark
+colorscheme brezza
+
+" Update file when changed from outside of Vim.
+set autoread
+
+" Tabs & Spaces
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smartindent
+set backspace=indent,eol,start
+" set textwidth=80
+
+" UI
+set number
+set signcolumn=yes
+set showcmd
+set cursorline
+set laststatus=2
+set fillchars+=vert:\ 
+set wildmenu
+set showmatch
+set virtualedit=onemore
+noremap j gj
+noremap k gk
+" set statusline=%m%r%h%w\%=[Type=%Y\,\ Format=%{&ff}\,\ Enc=%{&fileencoding}\,\ %P\,\ L%L]
+set clipboard+=unnamed
+set mouse=a
+set noerrorbells
+
+"
+set timeoutlen=1000 ttimeoutlen=0
+
+" Files
+set encoding=utf-8
+set fileformats=unix,mac,dos
+
+" Syntax highlight
+autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+
+
+
 """""""""""
 " Vundle
 """""""""""
@@ -79,50 +128,3 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 """""""""""""""""""""""""""""""
-
-" Nocompatible mode with Vi
-set nocompatible
-
-" Syntax theme
-syntax enable
-set background=dark
-colorscheme brezza
-
-" Update file when changed from outside of Vim.
-set autoread
-
-" Tabs & Spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set smartindent
-set backspace=indent,eol,start
-" set textwidth=80
-
-" UI
-set number
-set signcolumn=yes
-set showcmd
-set cursorline
-set laststatus=2
-set fillchars+=vert:\ 
-set wildmenu
-set showmatch
-set virtualedit=onemore
-noremap j gj
-noremap k gk
-" set statusline=%m%r%h%w\%=[Type=%Y\,\ Format=%{&ff}\,\ Enc=%{&fileencoding}\,\ %P\,\ L%L]
-set clipboard+=unnamed
-set mouse=a
-set noerrorbells
-
-"
-set timeoutlen=1000 ttimeoutlen=0
-
-" Files
-set encoding=utf-8
-set fileformats=unix,mac,dos
-
-" Syntax highlight
-autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
