@@ -13,6 +13,7 @@ set autoread
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+" Convert tabs to spaces
 set expandtab
 set smartindent
 set backspace=indent,eol,start
@@ -25,21 +26,29 @@ set showcmd
 set cursorline
 set laststatus=2
 set fillchars+=vert:\ 
+"" Command-line completion with Tab
 set wildmenu
+"" When a bracket is inserted, briefly jump to the matching one.
 set showmatch
-set virtualedit=onemore
+"" Allow virtual editing
+set virtualedit+=all
 noremap j gj
 noremap k gk
 " set statusline=%m%r%h%w\%=[Type=%Y\,\ Format=%{&ff}\,\ Enc=%{&fileencoding}\,\ %P\,\ L%L]
+" Integrate yank with clipboard
 set clipboard+=unnamed
+" Enable the mouse in all modes
 set mouse=a
+" Prevent to ring the bell for error messages
 set noerrorbells
 
-"
+""
 set timeoutlen=1000 ttimeoutlen=0
 
 " Files
+" Character code in Vim
 set encoding=utf-8
+" Line ending characters in a file
 set fileformats=unix,mac,dos
 
 " Syntax highlight
