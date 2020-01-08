@@ -72,6 +72,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " File system explorer
 Plugin 'scrooloose/nerdtree'
+autocmd vimenter * NERDTree
 
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
