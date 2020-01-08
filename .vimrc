@@ -110,6 +110,9 @@ Plugin 'L9'
 " Jumping to tags.
 Plugin 'wincent/command-t'
 
+" Snippet for Vim
+Plugin 'honza/vim-snippets'
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 " HTML utility.
