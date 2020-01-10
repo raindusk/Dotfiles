@@ -73,6 +73,7 @@ Plugin 'VundleVim/Vundle.vim'
 " File system explorer
 Plugin 'scrooloose/nerdtree'
 autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
