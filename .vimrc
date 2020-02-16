@@ -97,7 +97,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-endwise'
 
 " Helper to quote
-"Plugin 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 
 " JavaScript syntax
 Plugin 'othree/yajs.vim'
