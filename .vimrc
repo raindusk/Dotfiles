@@ -78,6 +78,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
+" For Liquid template
+" This requires two specific files in ftplugin & ftdetect directories
+Plugin 'tpope/vim-liquid'
+
 " Syntax highlighting Slim
 Plugin 'slim-template/vim-slim.git'
 
