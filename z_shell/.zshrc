@@ -60,8 +60,11 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
 ## Complete process name of 'ps' command
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
-## For zsh command completion
+## For command completion installed by Homebrew
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+## Load and initialize the completion
+autoload -Uz compinit && compinit
 
 ## Complete Git commands
 ## The script from '~/.zsh/_git'
