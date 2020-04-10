@@ -4,17 +4,20 @@ export LDFLAGS="-L/usr/local/opt/readline/lib"
 export CPPFLAGS="-I/usr/local/opt/readline/include"
 export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
-## Aliases
+# Aliases
 alias bx="bundle exec"
 
+## For Ruby with Bundler
 alias br="bundle exec rails"
 alias brg="bundle exec rails generate"
 alias brc="bundle exec rails console"
 alias brs="bundle exec rails server"
 
+## For Python
 alias python="python3"
 alias pip="pip3"
 
+## For shell
 alias la='ls -a'
 alias ll='ls -l'
 
