@@ -17,6 +17,13 @@ alias brs="bundle exec rails server"
 alias python="python3"
 alias pip="pip3"
 
+alias gstat="git status"
+alias glog="git log --oneline"
+alias gco="git checkout"
+alias gadd="git add"
+alias gdiff="git diff"
+alias gcmt="git commit -m"
+
 ## For shell
 alias la='ls -a'
 alias ll='ls -l'
