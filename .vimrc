@@ -13,8 +13,7 @@ set autoread
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-" Convert tabs to spaces
-set expandtab
+set expandtab " Convert tabs to spaces
 set smartindent
 set backspace=indent,eol,start
 " set textwidth=80
@@ -78,6 +77,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
+" For Liquid template
+" This requires two specific files in ftplugin & ftdetect directories
+Plugin 'tpope/vim-liquid'
+
 " Syntax highlighting Slim
 Plugin 'slim-template/vim-slim.git'
 
@@ -97,7 +100,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-endwise'
 
 " Helper to quote
-"Plugin 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 
 " JavaScript syntax
 Plugin 'othree/yajs.vim'
