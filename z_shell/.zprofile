@@ -1,20 +1,30 @@
-
+export PATH_TO_FX="/Library/Java/JavaVirtualMachines/javafx-sdk-13.0.2/lib"
 # Readline
 export LDFLAGS="-L/usr/local/opt/readline/lib"
 export CPPFLAGS="-I/usr/local/opt/readline/include"
 export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
-## Aliases
+# Aliases
 alias bx="bundle exec"
 
+## For Ruby with Bundler
 alias br="bundle exec rails"
 alias brg="bundle exec rails generate"
 alias brc="bundle exec rails console"
 alias brs="bundle exec rails server"
 
+## For Python
 alias python="python3"
 alias pip="pip3"
 
+alias gstat="git status"
+alias glog="git log --oneline"
+alias gco="git checkout"
+alias gadd="git add"
+alias gdiff="git diff"
+alias gcmt="git commit -m"
+
+## For shell
 alias la='ls -a'
 alias ll='ls -l'
 
