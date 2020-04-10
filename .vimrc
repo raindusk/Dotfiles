@@ -13,8 +13,7 @@ set autoread
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-" Convert tabs to spaces
-set expandtab
+set expandtab " Convert tabs to spaces
 set smartindent
 set backspace=indent,eol,start
 " set textwidth=80
