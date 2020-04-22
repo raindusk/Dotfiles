@@ -27,7 +27,8 @@ alias glog="git log --oneline"
 alias gco="git checkout"
 alias gadd="git add"
 alias gdiff="git diff"
-alias gcmt="git commit -m"
+alias gcommit="git commit"
+alias gpush="git push"
 
 ## For shell
 alias la='ls -a'
