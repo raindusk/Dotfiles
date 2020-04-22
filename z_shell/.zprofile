@@ -1,4 +1,6 @@
+# JavaFX
 export PATH_TO_FX="/Library/Java/JavaVirtualMachines/javafx-sdk-13.0.2/lib"
+
 # Readline
 export LDFLAGS="-L/usr/local/opt/readline/lib"
 export CPPFLAGS="-I/usr/local/opt/readline/include"
