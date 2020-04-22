@@ -1,3 +1,6 @@
+# Nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # JavaFX
 export PATH_TO_FX="/Library/Java/JavaVirtualMachines/javafx-sdk-13.0.2/lib"
 
