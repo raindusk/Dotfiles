@@ -77,6 +77,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
+" For Markdown preview
+Plugin 'JamshedVesuna/vim-markdown-preview'
+
 " For Liquid template
 " This requires two specific files in ftplugin & ftdetect directories
 Plugin 'tpope/vim-liquid'
