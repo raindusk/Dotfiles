@@ -1,3 +1,6 @@
+# GnuPG
+export GPG_TTY=$(tty)
+
 # Nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
@@ -22,13 +25,17 @@ alias brs="bundle exec rails server"
 alias python="python3"
 alias pip="pip3"
 
+## For Git
 alias gstat="git status"
 alias glog="git log --oneline"
 alias gco="git checkout"
+alias gbranch="git branch"
 alias gadd="git add"
 alias gdiff="git diff"
 alias gcommit="git commit"
 alias gpush="git push"
+alias grebase="git rebase"
+alias gswitch="git switch"
 
 ## For shell
 alias la='ls -a'
@@ -54,4 +61,3 @@ alias -g G='| grep'
 #autoload -Uz compinit
 ## Skip security check when -c option is set
 #compinit -c
-
